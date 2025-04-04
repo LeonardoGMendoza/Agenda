@@ -1,0 +1,22 @@
+[debug] [2025-03-04T13:55:32.463Z] ----------------------------------------------------------------------
+[debug] [2025-03-04T13:55:32.472Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LEONARDO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create agendanurse --json
+[debug] [2025-03-04T13:55:32.473Z] CLI Version:   13.31.2
+[debug] [2025-03-04T13:55:32.474Z] Platform:      win32
+[debug] [2025-03-04T13:55:32.474Z] Node Version:  v22.14.0
+[debug] [2025-03-04T13:55:32.475Z] Time:          Tue Mar 04 2025 10:55:32 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2025-03-04T13:55:32.476Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-04T13:55:32.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-04T13:55:32.505Z] > authorizing via signed-in user (aionetrix.skynet.technologies@gmail.com)
+[debug] [2025-03-04T13:55:32.522Z] Checked if tokens are valid: true, expires at: 1741099930014
+[debug] [2025-03-04T13:55:32.523Z] Checked if tokens are valid: true, expires at: 1741099930014
+[debug] [2025-03-04T13:55:32.526Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-04T13:55:32.527Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"agendanurse","name":"agendanurse"}
+[debug] [2025-03-04T13:55:33.706Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-03-04T13:55:33.707Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-03-04T13:55:33.878Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\LEONARDO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\LEONARDO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID agendanurse. Please try again with a unique project ID.
